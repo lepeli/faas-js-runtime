@@ -89,7 +89,7 @@ async function __start(func, options) {
   try {
     await server.listen({
       port: config.port,
-      host: '::',
+      host: '0.0.0.0',
     });
     return server.server;
   } catch (err) {
